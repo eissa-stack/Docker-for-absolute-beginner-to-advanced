@@ -117,7 +117,7 @@ sudo yum remove docker docker-client docker-client-latest docker-common \
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 
 # Add Docker repository
-sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 # Install Docker Engine
 sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
